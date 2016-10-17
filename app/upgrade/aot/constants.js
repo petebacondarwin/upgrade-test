@@ -1,0 +1,10 @@
+export var UPGRADE_MODULE_NAME = '$$UpgradeModule';
+export var INJECTOR_KEY = '$$angularInjector';
+export var $INJECTOR = '$injector';
+export var $PARSE = '$parse';
+export var $SCOPE = '$scope';
+export var $COMPILE = '$compile';
+export var $TEMPLATE_CACHE = '$templateCache';
+export var $HTTP_BACKEND = '$httpBackend';
+export var $CONTROLLER = '$controller';
+//# sourceMappingURL=constants.js.map
