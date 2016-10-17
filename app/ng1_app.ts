@@ -1,15 +1,19 @@
-import { Directive, Input, ElementRef, Injector } from '@angular/core';
+import { Directive, Input, ElementRef, Injector, OnInit } from '@angular/core';
 import { downgradeComponent, UpgradeComponent } from './upgrade/aot';
 import { AppComponent } from './app.component';
 
 @Directive({
   selector: 'app-heroes'
 })
-export class HeroesUpgradeComponent extends UpgradeComponent {
+export class HeroesUpgradeComponent extends UpgradeComponent implements OnInit {
   @Input() heroes: string[];
 
   constructor(elementRef: ElementRef, injector: Injector) {
+    debugger;
     super('appHeroes', elementRef, injector);
+  }
+  ngOnInit() {
+    debugger;
   }
 }
 
