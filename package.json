@@ -6,7 +6,7 @@
     "lite": "lite-server",
     "postinstall": "typings install && webdriver-manager update",
     "typings": "typings",
-    "build-jit": "tsc",
+    "jit": "tsc && concurrently \"tsc -w\" \"lite-server\"",
     "build": "ngc -p tsconfig-aot.json && rollup -c rollup-config.js",
     "test": "protractor protractor.conf.js"
   },

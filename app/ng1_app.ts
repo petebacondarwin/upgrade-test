@@ -1,4 +1,3 @@
-import "angular/angular.js";
 import { Directive, Input, ElementRef, Injector } from '@angular/core';
 import { downgradeComponent, UpgradeComponent } from './upgrade/aot';
 import { AppComponent } from './app.component';
@@ -16,7 +15,7 @@ export class HeroesUpgradeComponent extends UpgradeComponent {
 
 angular.module('app', [])
 
-  .directive('my-app', downgradeComponent({ component: AppComponent }) as ng.Injectable<ng.IDirectiveFactory>)
+  .directive('myApp', downgradeComponent({ component: AppComponent }) as ng.Injectable<ng.IDirectiveFactory>)
 
   .component('appHeroes', {
     bindings: { heroes: '<' },
