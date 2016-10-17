@@ -1,3 +1,4 @@
+import "angular/angular.js";
 import { Directive, Input, ElementRef, Injector } from '@angular/core';
 import { downgradeComponent, UpgradeComponent } from './upgrade/aot';
 import { AppComponent } from './app.component';
