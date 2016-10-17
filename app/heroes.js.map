@@ -1,0 +1,1 @@
+{"version":3,"file":"heroes.js","sourceRoot":"","sources":["heroes.ts"],"names":[],"mappings":"AAAA,OAAO,CAAC,MAAM,CAAC,KAAK,EAAE,EAAE,CAAC;KACxB,SAAS,CAAC,YAAY,EAAE;IACvB,QAAQ,EAAE;QACR,MAAM,EAAE,GAAG;KACZ;IACD,QAAQ,EAAE,yEAAyE;CACpF,CAAC,CAAC"}
