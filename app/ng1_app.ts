@@ -12,6 +12,7 @@ export class HeroesUpgradeComponent extends UpgradeComponent implements OnInit, 
     debugger;
     super('appHeroes', elementRef, injector);
   }
+
   ngOnInit() {
     super.ngOnInit();
   }
