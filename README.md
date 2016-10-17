@@ -10,26 +10,37 @@ This project is a small app that demos ngUpgrade AOT support.
 npm install
 ```
 
-## Running the JIT versio
+## Running the JIT version
 
-* Build the JIT code and start a webserver:
+* Watch the files and build the JIT code
 
 ```
-npm run jit
+npm run watch-jit
 ```
 
-* Click on the "JIT build" link or browse to http://localhost:3000/index-jit.html
+* In a separate terminal start the webserver
 
+```
+npm run start-jit
+```
+
+The files will be recompiled whenever they change
 
 ## Running the AOT distribution
 
 * Build the AOT and start a webserver
 
 ```
-npm run aot
+npm run build-aot
 ```
 
-* Click on the "AOT build" link or browse to http://localhost:3000/index-aot.html
+* In a separate terminal start the webserver
+
+```
+npm run start-aot
+```
+
+The files are not watched - you will need to run `npm run build-aot` after any change.
 
 
 ## Notes

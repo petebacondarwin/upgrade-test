@@ -2,12 +2,11 @@
   "name": "angular-quickstart",
   "version": "1.0.0",
   "scripts": {
-    "start": "lite-server",
-    "lite": "lite-server",
+    "start-jit": "cp index-jit.html index.html && lite-server",
+    "start-aot": "cp index-aot.html index.html && lite-server",
     "postinstall": "typings install && webdriver-manager update",
-    "typings": "typings",
-    "jit": "tsc && concurrently \"tsc -w\" \"lite-server\"",
-    "build": "ngc -p tsconfig-aot.json && rollup -c rollup-config.js",
+    "watch-jit": "tsc -w",
+    "build-aot": "ngc -p tsconfig-aot.json && rollup -c rollup-config.js",
     "test": "protractor protractor.conf.js"
   },
   "licenses": [
