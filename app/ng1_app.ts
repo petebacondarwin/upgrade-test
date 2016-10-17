@@ -1,11 +1,11 @@
-import { Directive, Input, ElementRef, Injector, OnInit } from '@angular/core';
+import { Directive, Input, ElementRef, Injector, OnInit, OnChanges, SimpleChanges, DoCheck } from '@angular/core';
 import { downgradeComponent, UpgradeComponent } from './upgrade/aot';
 import { AppComponent } from './app.component';
 
 @Directive({
   selector: 'app-heroes'
 })
-export class HeroesUpgradeComponent extends UpgradeComponent implements OnInit {
+export class HeroesUpgradeComponent extends UpgradeComponent implements OnInit, OnChanges, DoCheck {
   @Input() heroes: string[];
 
   constructor(elementRef: ElementRef, injector: Injector) {
@@ -13,7 +13,15 @@ export class HeroesUpgradeComponent extends UpgradeComponent implements OnInit {
     super('appHeroes', elementRef, injector);
   }
   ngOnInit() {
-    debugger;
+    super.ngOnInit();
+  }
+
+  ngOnChanges(changes: SimpleChanges) {
+    super.ngOnChanges(changes);
+  }
+
+  ngDoCheck() {
+    super.ngDoCheck();
   }
 }
 
